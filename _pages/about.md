@@ -13,11 +13,11 @@ I am a Ph.D. student in Computer Science at [The Hong Kong Polytechnic Universit
 
 ## Research Interests
 
-My research focuses on two main areas:
+- **Multimodal Large Language Models**
 
-- **Multimodal Large Language Models**: Exploring how to effectively integrate visual and textual information in large language models, with particular emphasis on multi-layer visual feature fusion and connector architectures.
+- **Embodied AI**
 
-- **Multisource Remote Sensing Image Classification**: Developing advanced deep learning methods for processing and analyzing multi-source remote sensing data, including hyperspectral, SAR, and LiDAR imagery. -->
+- **Multisource Remote Sensing Image Classification**
 
 ## Education
 
@@ -55,7 +55,7 @@ My research focuses on two main areas:
 - L. Lv, **J. Lin**, F. Gao, et al. [Hyperspectral and SAR Image Classification via Recursive Feature Interactive Fusion Network](https://ieeexplore.ieee.org/abstract/document/10282312). **IGARSS 2023**
 - S. Hu, Y. Hu, **J. Lin**, et al. [Multi-Scale Transformer Network for Hyperspectral Image Denoising](https://ieeexplore.ieee.org/abstract/document/10282467). **IGARSS 2023**
 
-*For a complete list of publications, please visit my [Publications page](/publications/).*
+*For a complete list of publications, please visit my [google scholar](https://scholar.google.com/citations?user=nbuk8v8AAAAJ&hl=zh-CN).*
 
 ## Contact
 
