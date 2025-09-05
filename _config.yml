@@ -12,7 +12,7 @@ site_theme               : "default" # Currently available options are "default"
 title                    : "Junyan Lin - Computer Science PhD Student"
 title_separator          : "-"
 name                     : &name "Junyan Lin"
-description              : &description "PhD Student in Computer Science at The Hong Kong Polytechnic University. Research interests: Multimodal Large Language Models."
+description              : &description "PhD Student in Computer Science at The Hong Kong Polytechnic University. Research interests: Multimodal Large Language Models, Embodied AI."
 url                      : https://linjyan00.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io" or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "Linjyan00/Linjyan00.github.io"
@@ -25,7 +25,7 @@ author:
   avatar           : "profile.png"
   name             : "Junyan Lin"
   pronouns         : # example: "she/her"  
-  bio              : "PhD Student in Computer Science at The Hong Kong Polytechnic University. Research interests: Multimodal Large Language Models."
+  bio              : "PhD Student in Computer Science at The Hong Kong Polytechnic University. Research interests: Multimodal Large Language Models, Embodied AI."
   location         : "Hong Kong, China"
   employer         : "The Hong Kong Polytechnic University"
   uri              : # URL
@@ -37,9 +37,9 @@ author:
   googlescholar    : "https://scholar.google.com/citations?user=nbuk8v8AAAAJ&hl=zh-CN"
   inspire-hep      : # URL
   impactstory      : # URL
-  orcid            : "http://orcid.org/0000-0000-0000-0000"
+  # orcid            : "http://orcid.org/0000-0000-0000-0000"
   semantic         : # URL
-  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
+  # pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   researchgate     : # URL
   scopus           : # URL
 
@@ -53,7 +53,7 @@ author:
 
   # Social media
   artstation       : # Username
-  bluesky          : "bsky.app" # Replace this with you Bluesky username
+  # bluesky          : "bsky.app" # Replace this with you Bluesky username
   facebook         : # Username
   flickr           : # Username
   foursquare       : # Username
