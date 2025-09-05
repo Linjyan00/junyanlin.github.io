@@ -40,6 +40,25 @@ My research focuses on two main areas:
 
 I have published multiple papers in top-tier venues including CVPR, EMNLP, and IEEE TGRS. My work spans both multimodal large language models and remote sensing image classification, with a focus on innovative architectural designs and effective feature fusion strategies.
 
+### Selected Publications
+
+**Multimodal Large Language Models:**
+- **J. Lin**, H. Chen, Y. Fan, et al. [Multi-Layer Visual Feature Fusion in Multimodal LLMs: Methods, Analysis, and Best Practices](https://arxiv.org/pdf/2503.06063). **CVPR 2025** (CCF-A, CV Tier 1 Conference)
+- **J. Lin**, H. Chen, D. Zhu, et al. [To Preserve or Compress: A Study of Connectors Through Perceptual Efficacy in Multimodal Large Language Models](https://aclanthology.org/2024.emnlp-main.325/). **EMNLP 2024** (CCF-B, NLP Tier 1 Conference)
+- J. Liu, Y. Wei, **J. Lin**, et al. [Tell Codec What Worth Compressing: Semantically Disentangled Image Coding for Machine with LMMs](https://ieeexplore.ieee.org/abstract/document/10849922/). **VCIP 2024**
+
+**Multisource Remote Sensing Image Classification:**
+- **J. Lin**, F. Gao, L. Qi, et al. [Dynamic Cross-Modal Feature Interaction Network for Hyperspectral and LiDAR Data Classification](https://ieeexplore.ieee.org/abstract/document/10924653). **IEEE TGRS 2025** (CCF-B, CAS Q1, JCR Q1, IF:8.2)
+- **J. Lin**, F. Gao, X. Shi, et al. [SS-MAE: Spatial–spectral masked autoencoder for multisource remote sensing image classification](https://ieeexplore.ieee.org/abstract/document/10314566/). **IEEE TGRS 2023** (CCF-B, CAS Q1, JCR Q1, IF:8.2)
+- **J. Lin**, X. Jin, F. Gao, et al. [Boosting Spatial-Spectral Masked Auto-Encoder Through Mining Redundant Spectra for HSI-SAR/LiDAR Classification](https://ieeexplore.ieee.org/abstract/document/10642405/). **IGARSS 2024**
+- L. Cheng, **J. Lin**, F. Gao, et al. [Hyperspectral Image Change Detection via Cross-Sample Slot Attention and Dual Gated Feed-Forward Network](https://link.springer.com/chapter/10.1007/978-981-97-8493-6_32). **PRCV 2024** (CCF-C)
+- X. Jin, **J. Lin**, F. Gao, et al. [Sparse Focus Network for Multi-Source Remote Sensing Data Classification](https://ieeexplore.ieee.org/abstract/document/10641700). **IGARSS 2024**
+- X. Shi, **J. Lin**, Y. Rao, et al. [Gated-Cross Aggregation Network for Hyperspectral and LiDAR Data Classification](https://ieeexplore.ieee.org/abstract/document/10282184/). **IGARSS 2023**
+- L. Lv, **J. Lin**, F. Gao, et al. [Hyperspectral and SAR Image Classification via Recursive Feature Interactive Fusion Network](https://ieeexplore.ieee.org/abstract/document/10282312). **IGARSS 2023**
+- S. Hu, Y. Hu, **J. Lin**, et al. [Multi-Scale Transformer Network for Hyperspectral Image Denoising](https://ieeexplore.ieee.org/abstract/document/10282467). **IGARSS 2023**
+
+*For a complete list of publications, please visit my [Publications page](/publications/).*
+
 ## Contact
 
 - **Email**: linjyan00@163.com
