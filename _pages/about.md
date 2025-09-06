@@ -9,7 +9,7 @@ redirect_from:
 
 # About Me
 
-I am a Ph.D. student in Computer Science at [The Hong Kong Polytechnic University](https://www.polyu.edu.hk/), working under the supervision of [Prof. Changwen Chen](https://scholar.google.com/citations?user=w2HXPUUAAAAJ) and [Dr. Xin Jin](https://scholar.google.com/citations?user=byaSC-kAAAAJ&hl=zh-CN). 
+I am a Ph.D. student in Computer Science at [The Hong Kong Polytechnic University](https://www.polyu.edu.hk/), working under the supervision of [Prof. Changwen Chen](https://scholar.google.com/citations?user=w2HXPUUAAAAJ) and [Dr. Xin Jin](https://scholar.google.com/citations?user=byaSC-kAAAAJ&hl=zh-CN). If you are interested in collaboration or would like to exchange ideas, please feel free to reach out to me via email.
 
 ## Research Interests
 
