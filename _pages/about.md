@@ -21,13 +21,13 @@ I am a Ph.D. student in Computer Science at [The Hong Kong Polytechnic Universit
 
 ## Education
 
-- **Ph.D. in Computer Science** (Expected Jun. 2029)  
+- **Ph.D. in Computer Science and Technology** (Expected Jun. 2029)  
   The Hong Kong Polytechnic University, Hong Kong, China
 
 - **Master in Computer Science and Technology** (GPA: 3.82/4.0)  
   Ocean University of China, Qingdao, China (Sep. 2022 - Jun. 2025)
 
-- **B.S. in Engineering** (GPA: 88/100, Rank: 1/68)  
+- **B.S. in Computer Science and Technology** (GPA: 88/100, Rank: 1/68)  
   Zhejiang Gongshang University, Hangzhou, China (Sep. 2018 - Jun. 2022)
 
 ## Recent Achievements
@@ -42,7 +42,7 @@ I am a Ph.D. student in Computer Science at [The Hong Kong Polytechnic Universit
 
 **Multimodal Large Language Models:**
 
-- H. Chen, **J. Lin** (co-first), X. Chen, Y. Fan, X. Jin, H. Su, J. Dong, J. Fu, X. Shen. [Rethinking Visual Layer Selection in Multimodal LLMs](https://arxiv.org/abs/2506.12345). **EMNLP 2025** (CCF-B, NLP Tier 1 Conference)
+- H. Chen, **J. Lin** (co-first), X. Chen, Y. Fan, X. Jin, H. Su, J. Dong, J. Fu, X. Shen. [Rethinking Visual Layer Selection in Multimodal LLMs](https://arxiv.org/abs/2504.21447). **EMNLP 2025** (CCF-B, NLP Tier 1 Conference)
 - **J. Lin**, H. Chen, Y. Fan, et al. [Multi-Layer Visual Feature Fusion in Multimodal LLMs: Methods, Analysis, and Best Practices](https://arxiv.org/pdf/2503.06063). **CVPR 2025** (CCF-A, CV Tier 1 Conference)
 - **J. Lin**, H. Chen, D. Zhu, et al. [To Preserve or Compress: A Study of Connectors Through Perceptual Efficacy in Multimodal Large Language Models](https://aclanthology.org/2024.emnlp-main.325/). **EMNLP 2024** (CCF-B, NLP Tier 1 Conference)
 - J. Liu, Y. Wei, **J. Lin**, et al. [Tell Codec What Worth Compressing: Semantically Disentangled Image Coding for Machine with LMMs](https://ieeexplore.ieee.org/abstract/document/10849922/). **VCIP 2024**
