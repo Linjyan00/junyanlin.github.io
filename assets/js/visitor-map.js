@@ -144,9 +144,9 @@ class VisitorMap {
             const popupContent = `
                 <div style="text-align: center;">
                     <h4>${country}</h4>
-                    <p><strong>访问次数:</strong> ${stats.count}</p>
-                    <p><strong>访客数量:</strong> ${stats.visitors.length}</p>
-                    <small>最近访问: ${new Date(stats.visitors[0].lastVisit).toLocaleDateString()}</small>
+                    <p><strong>Visits:</strong> ${stats.count}</p>
+                    <p><strong>Visitors:</strong> ${stats.visitors.length}</p>
+                    <small>Last visit: ${new Date(stats.visitors[0].lastVisit).toLocaleDateString()}</small>
                 </div>
             `;
             marker.bindPopup(popupContent);
@@ -175,26 +175,26 @@ class VisitorMap {
             const div = L.DomUtil.create('div', 'visitor-map-legend');
             div.innerHTML = `
                 <div style="background: white; padding: 10px; border-radius: 5px; box-shadow: 0 2px 5px rgba(0,0,0,0.2);">
-                    <h4 style="margin: 0 0 10px 0; font-size: 14px;">访问统计</h4>
+                    <h4 style="margin: 0 0 10px 0; font-size: 14px;">Visit Statistics</h4>
                     <div style="display: flex; align-items: center; margin: 5px 0;">
                         <div style="width: 12px; height: 12px; background: #d73027; border-radius: 50%; margin-right: 8px;"></div>
-                        <span style="font-size: 12px;">10+ 次访问</span>
+                        <span style="font-size: 12px;">10+ visits</span>
                     </div>
                     <div style="display: flex; align-items: center; margin: 5px 0;">
                         <div style="width: 12px; height: 12px; background: #f46d43; border-radius: 50%; margin-right: 8px;"></div>
-                        <span style="font-size: 12px;">5-9 次访问</span>
+                        <span style="font-size: 12px;">5-9 visits</span>
                     </div>
                     <div style="display: flex; align-items: center; margin: 5px 0;">
                         <div style="width: 12px; height: 12px; background: #fdae61; border-radius: 50%; margin-right: 8px;"></div>
-                        <span style="font-size: 12px;">3-4 次访问</span>
+                        <span style="font-size: 12px;">3-4 visits</span>
                     </div>
                     <div style="display: flex; align-items: center; margin: 5px 0;">
                         <div style="width: 12px; height: 12px; background: #fee08b; border-radius: 50%; margin-right: 8px;"></div>
-                        <span style="font-size: 12px;">2 次访问</span>
+                        <span style="font-size: 12px;">2 visits</span>
                     </div>
                     <div style="display: flex; align-items: center; margin: 5px 0;">
                         <div style="width: 12px; height: 12px; background: #e6f598; border-radius: 50%; margin-right: 8px;"></div>
-                        <span style="font-size: 12px;">1 次访问</span>
+                        <span style="font-size: 12px;">1 visit</span>
                     </div>
                 </div>
             `;
@@ -210,9 +210,9 @@ class VisitorMap {
         const statsElement = document.getElementById('visitor-stats-text');
         if (statsElement) {
             statsElement.innerHTML = `
-                总访问次数: <strong>${stats.totalVisits}</strong> | 
-                独立访客: <strong>${stats.uniqueVisitors}</strong> | 
-                来自国家: <strong>${stats.countries}</strong>
+                Total Visits: <strong>${stats.totalVisits}</strong> | 
+                Unique Visitors: <strong>${stats.uniqueVisitors}</strong> | 
+                Countries: <strong>${stats.countries}</strong>
             `;
         }
     }
