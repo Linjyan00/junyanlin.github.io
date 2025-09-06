@@ -1,4 +1,4 @@
-// 访客地理位置统计地图
+// Visitor Geographic Location Statistics Map
 class VisitorMap {
     constructor(containerId) {
         this.containerId = containerId;
@@ -8,33 +8,33 @@ class VisitorMap {
         this.init();
     }
 
-    // 初始化地图
+    // Initialize map
     init() {
-        // 检查是否已经加载了Leaflet
+        // Check if Leaflet is loaded
         if (typeof L === 'undefined') {
             console.error('Leaflet library not loaded');
             return;
         }
 
-        // 创建地图
+        // Create map
         this.map = L.map(this.containerId).setView([20, 0], 2);
         
-        // 添加地图瓦片
+        // Add map tiles
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
             attribution: '© OpenStreetMap contributors'
         }).addTo(this.map);
 
-        // 加载访客数据并显示
+        // Load and display visitor data
         this.loadAndDisplayVisitors();
         
-        // 更新统计信息显示
+        // Update statistics display
         this.updateStatsDisplay();
     }
 
-    // 获取访客地理位置
+    // Get visitor geographic location
     async getVisitorLocation() {
         try {
-            // 使用免费的IP地理位置API
+            // Use free IP geolocation API
             const response = await fetch('https://ipapi.co/json/');
             const data = await response.json();
             
@@ -57,19 +57,19 @@ class VisitorMap {
         }
     }
 
-    // 保存访客数据到localStorage
+    // Save visitor data to localStorage
     saveVisitorData(visitorInfo) {
         if (!visitorInfo) return;
 
-        // 检查是否已经记录过这个IP
+        // Check if this IP has been recorded before
         const existingVisitor = this.visitorData.find(v => v.ip === visitorInfo.ip);
         
         if (existingVisitor) {
-            // 更新访问时间
+            // Update visit time
             existingVisitor.lastVisit = visitorInfo.timestamp;
             existingVisitor.visitCount = (existingVisitor.visitCount || 1) + 1;
         } else {
-            // 添加新访客
+            // Add new visitor
             this.visitorData.push({
                 ...visitorInfo,
                 visitCount: 1,
@@ -78,11 +78,11 @@ class VisitorMap {
             });
         }
 
-        // 保存到localStorage
+        // Save to localStorage
         localStorage.setItem('visitorMapData', JSON.stringify(this.visitorData));
     }
 
-    // 从localStorage加载访客数据
+    // Load visitor data from localStorage
     loadVisitorData() {
         try {
             const data = localStorage.getItem('visitorMapData');
@@ -93,25 +93,25 @@ class VisitorMap {
         }
     }
 
-    // 加载并显示访客数据
+    // Load and display visitor data
     async loadAndDisplayVisitors() {
-        // 获取当前访客位置
+        // Get current visitor location
         const currentVisitor = await this.getVisitorLocation();
         if (currentVisitor) {
             this.saveVisitorData(currentVisitor);
         }
 
-        // 显示所有访客位置
+        // Display all visitor locations
         this.displayVisitors();
     }
 
-    // 在地图上显示访客位置
+    // Display visitor locations on map
     displayVisitors() {
-        // 清除现有标记
+        // Clear existing markers
         this.markers.forEach(marker => this.map.removeLayer(marker));
         this.markers = [];
 
-        // 按国家分组统计
+        // Group statistics by country
         const countryStats = {};
         this.visitorData.forEach(visitor => {
             if (visitor.latitude && visitor.longitude) {
@@ -129,7 +129,7 @@ class VisitorMap {
             }
         });
 
-        // 为每个国家创建标记
+        // Create markers for each country
         Object.entries(countryStats).forEach(([country, stats]) => {
             const marker = L.circleMarker([stats.lat, stats.lng], {
                 radius: Math.min(Math.max(stats.count * 2, 8), 20),
@@ -140,7 +140,7 @@ class VisitorMap {
                 fillOpacity: 0.8
             }).addTo(this.map);
 
-            // 添加弹出信息
+            // Add popup information
             const popupContent = `
                 <div style="text-align: center;">
                     <h4>${country}</h4>
@@ -154,20 +154,20 @@ class VisitorMap {
             this.markers.push(marker);
         });
 
-        // 添加图例
+        // Add legend
         this.addLegend();
     }
 
-    // 根据访问次数获取颜色
+    // Get color based on visit count
     getColorByCount(count) {
-        if (count >= 10) return '#d73027'; // 红色
-        if (count >= 5) return '#f46d43';  // 橙红色
-        if (count >= 3) return '#fdae61';  // 橙色
-        if (count >= 2) return '#fee08b';  // 黄色
-        return '#e6f598'; // 浅绿色
+        if (count >= 10) return '#d73027'; // Red
+        if (count >= 5) return '#f46d43';  // Orange-red
+        if (count >= 3) return '#fdae61';  // Orange
+        if (count >= 2) return '#fee08b';  // Yellow
+        return '#e6f598'; // Light green
     }
 
-    // 添加图例
+    // Add legend
     addLegend() {
         const legend = L.control({position: 'bottomright'});
         
@@ -204,7 +204,7 @@ class VisitorMap {
         legend.addTo(this.map);
     }
 
-    // 更新统计信息显示
+    // Update statistics display
     updateStatsDisplay() {
         const stats = this.getStats();
         const statsElement = document.getElementById('visitor-stats-text');
@@ -217,7 +217,7 @@ class VisitorMap {
         }
     }
 
-    // 获取统计信息
+    // Get statistics
     getStats() {
         const totalVisits = this.visitorData.reduce((sum, visitor) => sum + (visitor.visitCount || 1), 0);
         const uniqueVisitors = this.visitorData.length;
@@ -231,12 +231,12 @@ class VisitorMap {
     }
 }
 
-// 页面加载完成后初始化地图
+// Initialize map after page loads
 document.addEventListener('DOMContentLoaded', function() {
-    // 检查是否有访客地图容器
+    // Check if visitor map container exists
     const mapContainer = document.getElementById('visitor-map');
     if (mapContainer) {
-        // 加载Leaflet CSS和JS
+        // Load Leaflet CSS and JS
         if (!document.querySelector('link[href*="leaflet"]')) {
             const leafletCSS = document.createElement('link');
             leafletCSS.rel = 'stylesheet';
