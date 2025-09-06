@@ -55,7 +55,7 @@ I am a Ph.D. student in Computer Science at [The Hong Kong Polytechnic Universit
 - X. Jin, **J. Lin**, F. Gao, et al. [Sparse Focus Network for Multi-Source Remote Sensing Data Classification](https://ieeexplore.ieee.org/abstract/document/10641700). **IGARSS 2024**
 - X. Shi, **J. Lin**, Y. Rao, et al. [Gated-Cross Aggregation Network for Hyperspectral and LiDAR Data Classification](https://ieeexplore.ieee.org/abstract/document/10282184/). **IGARSS 2023**
 - L. Lv, **J. Lin**, F. Gao, et al. [Hyperspectral and SAR Image Classification via Recursive Feature Interactive Fusion Network](https://ieeexplore.ieee.org/abstract/document/10282312). **IGARSS 2023**
-- S. Hu, Y. Hu, **J. Lin**, et al. [Multi-Scale Transformer Network for Hyperspectral Image Denoising](https://ieeexplore.ieee.org/abstract/document/10282467). **IGARSS 2023**
+
 
 *For a complete list of publications, please visit my [google scholar](https://scholar.google.com/citations?user=nbuk8v8AAAAJ&hl=zh-CN).*
 
