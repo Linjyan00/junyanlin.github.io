@@ -154,8 +154,7 @@ class VisitorMap {
             this.markers.push(marker);
         });
 
-        // Add legend
-        this.addLegend();
+        // Legend removed as requested
     }
 
     // Get color based on visit count
@@ -167,42 +166,6 @@ class VisitorMap {
         return '#e6f598'; // Light green
     }
 
-    // Add legend
-    addLegend() {
-        const legend = L.control({position: 'bottomright'});
-        
-        legend.onAdd = function(map) {
-            const div = L.DomUtil.create('div', 'visitor-map-legend');
-            div.innerHTML = `
-                <div style="background: white; padding: 10px; border-radius: 5px; box-shadow: 0 2px 5px rgba(0,0,0,0.2);">
-                    <h4 style="margin: 0 0 10px 0; font-size: 14px;">Visit Statistics</h4>
-                    <div style="display: flex; align-items: center; margin: 5px 0;">
-                        <div style="width: 12px; height: 12px; background: #d73027; border-radius: 50%; margin-right: 8px;"></div>
-                        <span style="font-size: 12px;">10+ visits</span>
-                    </div>
-                    <div style="display: flex; align-items: center; margin: 5px 0;">
-                        <div style="width: 12px; height: 12px; background: #f46d43; border-radius: 50%; margin-right: 8px;"></div>
-                        <span style="font-size: 12px;">5-9 visits</span>
-                    </div>
-                    <div style="display: flex; align-items: center; margin: 5px 0;">
-                        <div style="width: 12px; height: 12px; background: #fdae61; border-radius: 50%; margin-right: 8px;"></div>
-                        <span style="font-size: 12px;">3-4 visits</span>
-                    </div>
-                    <div style="display: flex; align-items: center; margin: 5px 0;">
-                        <div style="width: 12px; height: 12px; background: #fee08b; border-radius: 50%; margin-right: 8px;"></div>
-                        <span style="font-size: 12px;">2 visits</span>
-                    </div>
-                    <div style="display: flex; align-items: center; margin: 5px 0;">
-                        <div style="width: 12px; height: 12px; background: #e6f598; border-radius: 50%; margin-right: 8px;"></div>
-                        <span style="font-size: 12px;">1 visit</span>
-                    </div>
-                </div>
-            `;
-            return div;
-        };
-        
-        legend.addTo(this.map);
-    }
 
     // Update statistics display
     updateStatsDisplay() {

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visitor Map Test</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+        }
+        #visitor-map {
+            height: 500px;
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .visitor-stats {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 16px;
+            color: #666;
+        }
+        .info {
+            background: #e3f2fd;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            border-left: 4px solid #2196f3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Visitor Geographic Distribution Test</h1>
+        
+        <div class="info">
+            <strong>Test Instructions:</strong>
+            <ul>
+                <li>Map should show only dots without legend</li>
+                <li>Click on dots to see popup with visit statistics</li>
+                <li>All text should be in English</li>
+                <li>No Chinese characters should appear</li>
+            </ul>
+        </div>
+
+        <div id="visitor-map"></div>
+        
+        <div class="visitor-stats">
+            <span id="visitor-stats-text">Loading visitor statistics...</span>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="assets/js/visitor-map.js?v=3"></script>
+</body>
+</html>
